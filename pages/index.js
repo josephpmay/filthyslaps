@@ -8,6 +8,18 @@ export default function Home() {
       <Head>
         <title>Filthy Slaps</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta property="og:url" content="filthyslaps.com" />
+        <meta property="og:type" content="Filthy Slaps" />
+        <meta
+          property="og:title"
+          content="Filthy Slaps"
+        />
+        <meta name="twitter:card" content="summary" />
+        <meta
+          property="og:description"
+          content="testing"
+        />
+        <meta property="og:image" content={"/logo.jpg"} />
       </Head>
 
       <main>
