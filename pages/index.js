@@ -113,7 +113,7 @@ export default function Home() {
         .column2 {
           float: left;
           padding: 10px;
-          height: 300px; /* Should be removed. Only for demonstration */
+          max-height: 300px; 
         }
         
         .left {
@@ -132,10 +132,26 @@ export default function Home() {
             .right {
               width: 40%;
             }
+
+            .row {
+              display: block;
+            }
+
+            .column {
+              width: 100%;
+            }
     
           }
 
-
+          @media only screen and (max-width: 500px) {
+            .left {
+              width: 100%;
+            }
+  
+              .right {
+                width: 100%;
+              }
+          }
         
         
        
@@ -143,12 +159,16 @@ export default function Home() {
 
         .mbar {
           background-color: black;
+          padding-top: 3px;
+          padding-bottom: 3px;
         }
 
         .hh4 {
           color: white;
           padding-left: 10px;
           padding-right: 20px;
+          margin-top: 3px;
+          padding-bottom: 3px;
           font-size: 22px;
           font-weight: bold;
         }
