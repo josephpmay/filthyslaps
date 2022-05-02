@@ -1,51 +1,76 @@
 import Head from 'next/head'
+import Image from 'next/image'
+
 
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>Filthy Slaps</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
+        
+        <header>
+          <div className="row">
+            <div className="column">
+            <div>
+              <Image
+                    priority
+                    src="/logo.jpg"
+                    alt="collage of buildings and transit in"
+                    width="864"
+                    height="190"
+
+                  />
+              </div>
+            </div>
+            <div className="column">Two</div>
+          </div>  
+          <div className="mbar">
+              <span className="hh4"> Home </span>
+              <span className="hh4"> Music </span>
+              <span className="hh4"> Genre </span>
+              <span className="hh4"> 
+                <a
+                href="https://soundcloud.com/filthytaft"
+               >
+            Playlists </a> </span>
+              <span className="hh4"> News </span>
+              <span className="hh4"> Interview </span>
+              <span className="hh4"> Submission </span>
+              <span className="hh4"> Store </span>
+          </div>
+        </header>
+
+        <div className="row2">
+          <div className='column2 left'> 
+          <Image
+                    priority
+                    src="/taft.png"
+                    alt="Ben Taft"
+                    width="3500"
+                    height="1610"
+
+                  />
+           </div>
+          <div className='column2 right'>
+            <h3>It's Ben Taft's Birthday</h3>
+            <hr></hr>
+            <p>The Los Angeles based CEO and angel investor turns 26? 27? I've lost track of the passage of years but anyway let's wish him a happy birthday.</p>
+          </div>
+        </div>
+
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Happy Birthday Taft!
         </h1>
 
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+          This URL and website are your birthday presents. Do with them as you please. 
         </p>
 
-        <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
 
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
       </main>
 
       <footer>
@@ -60,6 +85,63 @@ export default function Home() {
       </footer>
 
       <style jsx>{`
+
+        .row {
+          display: flex;
+        }
+
+        .column {
+          flex: 50%;
+        }
+        
+
+        .column2 {
+          float: left;
+          padding: 10px;
+          height: 300px; /* Should be removed. Only for demonstration */
+        }
+        
+        .left {
+          width: 75%;
+        }
+
+        .right {
+          width: 25%;
+        }
+
+        @media only screen and (max-width: 700px) {
+          .left {
+            width: 60%;
+          }
+
+            .right {
+              width: 40%;
+            }
+    
+          }
+
+
+        
+        
+       
+
+
+        .mbar {
+          background-color: black;
+        }
+
+        .hh4 {
+          color: white;
+          padding-left: 10px;
+          padding-right: 20px;
+          font-size: 22px;
+          font-weight: bold;
+        }
+
+        .row2 {
+          max-width: 893px;
+        }
+
         .container {
           min-height: 100vh;
           padding: 0 0.5rem;
