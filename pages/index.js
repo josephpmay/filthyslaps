@@ -19,14 +19,24 @@ export default function Home() {
               <Image
                     priority
                     src="/logo.jpg"
-                    alt="collage of buildings and transit in"
+                    alt="logo"
                     width="864"
                     height="190"
 
                   />
               </div>
             </div>
-            <div className="column">Two</div>
+            <div className="column">
+              
+              <Image
+                    priority
+                    src="/spiders.png"
+                    alt="logo"
+                    width="864"
+                    height="90"
+
+                  />
+            </div>
           </div>  
           <div className="mbar">
               <span className="hh4"> Home </span>
@@ -67,8 +77,12 @@ export default function Home() {
         </h1>
 
         <p className="description">
-          This URL and website are your birthday presents. Do with them as you please. 
+          This URL is your birthday presents. Do with it as you please. 
         </p>
+        <p className="description">
+        You can find the repository for this website <a className="dumbA" href="https://github.com/josephpmay/filthyslaps" >here.</a>
+        </p>
+
 
 
       </main>
@@ -79,7 +93,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Created with Next.js | Hosted by{' '}
           <img src="/vercel.svg" alt="Vercel" className="logo" />
         </a>
       </footer>
@@ -88,6 +102,7 @@ export default function Home() {
 
         .row {
           display: flex;
+          max-width: 893px;
         }
 
         .column {
@@ -136,6 +151,10 @@ export default function Home() {
           padding-right: 20px;
           font-size: 22px;
           font-weight: bold;
+        }
+
+        .dumbA {
+          text-decoration: underline;
         }
 
         .row2 {
