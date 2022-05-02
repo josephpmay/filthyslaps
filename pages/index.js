@@ -19,7 +19,7 @@ export default function Home() {
           property="og:description"
           content="testing"
         />
-        <meta property="og:image" content={"/logo.jpg"} />
+        <meta property="og:image" content={"/taft.png"} />
       </Head>
 
       <main>
