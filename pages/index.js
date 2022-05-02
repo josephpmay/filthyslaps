@@ -33,7 +33,7 @@ export default function Home() {
                     src="/spiders.png"
                     alt="logo"
                     width="864"
-                    height="90"
+                    height="190"
 
                   />
             </div>
